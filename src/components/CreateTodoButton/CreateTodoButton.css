@@ -1,0 +1,21 @@
+.CreateTodoButton{
+    width: 100%;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 18px;
+    font-weight: 800;
+    text-align: center;
+    background-color: coral;
+    border-radius: 8px; 
+    border: 1px solid rgb(235, 89, 36);
+    cursor: pointer;
+    z-index: 1;
+}
+.CreateTodoButton:hover{
+    background-color:  rgb(235, 89, 36);
+    border: 1px solid rgb(235, 89, 36);
+    transition: 0.5s;
+}
+.CreateTodoButton:focus{
+    border: 1px solid rgb(235, 89, 36);
+}

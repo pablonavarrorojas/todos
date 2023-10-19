@@ -1,0 +1,30 @@
+.ModalBackground{
+
+    background-color: rgb(0,0,0, 0.8);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+
+.ModalButtonClose{
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    background-color: coral;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    width: 35px;
+}
