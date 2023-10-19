@@ -21,7 +21,7 @@ function App() {
     loading,
     error,
     searchedTodos,
-    completeTodo,
+    completed,
     deleteTodo,
     openModal,
     setOpenModal,

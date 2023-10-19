@@ -16,8 +16,8 @@ function TodoProvider({ children }) {
 
   const [openModal, setOpenModal] = React.useState(false);
 
-  const completedTodos = todos.filter(todo => !!todo.completed).length; //!! convierte a boolean cualquier cosa que venga en la variable
-  const totalTodos = todos.length;
+  const completed = todos.filter(todo => !!todo.completed).length; //!! convierte a boolean cualquier cosa que venga en la variable
+  const total = todos.length;
 
   const searchedTodos = todos.filter(
     (todo) => { 
@@ -54,8 +54,8 @@ function TodoProvider({ children }) {
 
     return (
         <TodoContext.Provider value={{
-            completedTodos,
-            totalTodos,
+            completed,
+            total,
             loading,
             error,
             searchValue,
