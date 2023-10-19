@@ -5,7 +5,6 @@ const TodoContext = React.createContext();
 
 function TodoProvider({ children }) {
 
-  //Encapsulamos toda la logica
   const {
     item: todos,
     saveItem: saveTodos,
@@ -14,7 +13,6 @@ function TodoProvider({ children }) {
   } = useLocalStorage('TODOS_V1', []);
 
   const [searchValue, setSearchValue] = React.useState('');
-  //console.log('los users buscan todo de ' + searchValue)
 
   const [openModal, setOpenModal] = React.useState(false);
 
@@ -41,7 +39,7 @@ function TodoProvider({ children }) {
     const todoIndex = newTodos.findIndex(
       (todo) => todo.text == text
     );
-    newTodos.splice(todoIndex,1); //para eliminar del array, 1 param array, y 2do param la cantidad a borrar
+    newTodos.splice(todoIndex,1);
     saveTodos(newTodos);
   };
 
@@ -53,8 +51,6 @@ function TodoProvider({ children }) {
     });
     saveTodos(newTodos);
   }
-
-  
 
     return (
         <TodoContext.Provider value={{

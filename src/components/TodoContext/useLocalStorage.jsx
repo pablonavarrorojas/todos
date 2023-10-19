@@ -34,22 +34,13 @@ function useLocalStorage(itemName, initialValue) {
 
     }, 3000);
 
-    
-
   }, []);
-  
-    
-  
-    
   
   const saveItem = (newItem) => {
     localStorage.setItem(itemName, JSON.stringify(newItem))
     setItem(newItem);
   }
   
-  console.log(item);
-
-  //return [item, saveItem, loading, error]; //Cuando don mas de dos elementos de array, se retorna un objeto
   return {
     item,
     saveItem,

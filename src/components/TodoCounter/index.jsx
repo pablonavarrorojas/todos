@@ -2,7 +2,7 @@ import React from 'react'
 import './TodoCounter.css'
 import { TodoContext } from '../TodoContext';
 
-function TodoCounter() {  //las props son un objeto
+function TodoCounter() {
 
   const { completed, total } = React.useContext(TodoContext);
   
@@ -15,9 +15,4 @@ function TodoCounter() {  //las props son un objeto
   )
 }
 
-//export default TodoCounter
-
-//EXPORTAMOS de esa manera para evitar que al 
-//importar se cambien el nombre del compomente por error
-//esto se llama: export nombrado
 export { TodoCounter }; 
